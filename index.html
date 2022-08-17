@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+         .portfolio ul {
+         list-style-type: none;
+         margin: 10px;
+         width: 100%;
+         align-content: center;
+         padding:0px 30%;
+         overflow: hidden;
+         /*background-color: #333;*/
+         background-color: #1a1a1a;
+         position: -webkit-sticky; /* Safari */
+         position: sticky;
+         top: 0;
+         }
+
+         .portfolio li {
+         float: left;
+         }
+
+         .portfolio li a {
+         display: block;;
+         color: white;
+         /*text-align: center;*/
+         padding: 15px 15px;
+         text-decoration: none;
+         }
+
+         .portfolio li a:hover:not(.active) {
+         background-color: #111;
+         }
+
+         .portfolio .active {
+         /*background-color: #04AA6D;*/
+         background-color: #f9ca24;
+         color: #1a1a1a;
+         }
+    </style>
+</head>
+
+<body>
+    
+<!-- header section starts  -->
+<header>
+    <div class="user">
+        <img src="images/profile.jpg" alt="">
+        <h3 class="name">akunna anyamkpa</h3>
+        <p class="post">data analyst & scientist</p>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#education">certification</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- header section ends -->
+
+
+<div id="menu" class="fas fa-bars"></div>
+
+
+<!-- home section starts  -->
+<section class="home" id="home">
+    <h3>HI THERE !</h3>
+    <h1>I'M <span>akunna anyamkpa</span></h1>
+    <p> A unique and experienced Data analytics and Data science professional. I'm known for rigorous data scraping, data cleaning and gaining reasonable insights that take small and large organizations to the next level! I also build machine learning models that solve company pressing issues.</p>
+    <a href="https://drive.google.com/file/d/1LoMxbTcKi76cmw58xpzsIZY3e0EJHcz_">
+        <button class="btn"> download CV <i class="fas fa-download"></i> </button>
+    </a>
+<div class="contact" id="contact">
+<div class="row">
+    <div class="content">
+        <div class="info">
+            <h3 style="color: #1a1a1a"> <i class="fas fa-envelope"></i> akunnaanyamkpa@gmail.com</h3>
+            <h3 style="color: #1a1a1a"> <i class="fas fa-phone"></i> +234-905-338-3328 </h3>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- home section ends -->
+
+
+
+<!-- portfolio section starts  -->
+<section class="portfolio" id="portfolio">
+<h1 class="heading"> my <span>portfolio</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <a href="https://github.com/Akunnadove/DCT-Covid-Dashboard">
+        <img src="images/covidanalysis.png" alt="">
+        </a>
+    </div>
+
+    <div class="box">
+        <a href="https://github.com/Akunnadove/Charlie_Project">
+        <img src="images/charlie.png" alt="">
+        </a>
+    </div>
+
+    <div class="box">
+        <a href="https://github.com/Akunnadove/Building-Project-Dashboard">
+        <img src="images/building.png" alt="">
+        </a>
+    </div>
+
+    <div class="box">
+        <a href="https://github.com/Akunnadove/ExcelTech-Leads-Dashboard">
+        <img src="images/exceltech.png" alt="">
+        </a>
+    </div>
+
+    <div class="box">
+        <a href="https://github.com/Akunnadove/Supa-Unique-Dashboard">
+        <img src="images/supaunique.png" alt="">
+        </a>
+    </div>
+
+    <div class="box">
+        <a href="https://github.com/Akunnadove/ZimTechnology-Company-Data-Analysis-in-Python">
+        <img src="images/zimtech.png" alt="">
+        </a>
+    </div>
+
+    <div class="box">
+        <a href="https://github.com/Akunnadove/Student-Performance-Analysis-in-Python">
+        <img src="images/student.png" alt="">
+        </a>
+    </div>
+
+</div>
+</section>
+<!-- portfolio section ends -->
+
+
+<!-- education section starts  -->
+
+<section class="education" id="education">
+
+<h1 class="heading"> my <span>certification</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2018</span>
+        <h3>Bsc Computer Science</h3>
+        <p>Department: Computer & information sciences</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2021</span>
+        <h3>IBM Data courses</h3>
+        <p>Data Science Foundations - Level 1</p>
+        <p>Python for Data Science</p>
+        <p>Data Analysis with Python</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2022</span>
+        <h3>Google Data Analytics Professional Certificate</h3>
+        <p>Foundations: Data, Data, Everywhere</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2022</span>
+        <h3>Worldquant university Datascience Lab</h3>
+        <p>Datascience Lab</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2022</span>
+        <h3>Hackerrank SQL Certifications</h3>
+        <p>SQL (Basic)</p>
+        <p>SQL (Intermediate)</p>
+    </div> 
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2022</span>
+        <h3>KPMG Data Analytics Consulting Virtual Internship</h3>
+        <p>Data Quality Assessment</p>
+        <p>Data Insights</p>
+        <p>Data Insights and Presentation</p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- education section ends -->
+
+<!-- scroll top button  -->
+<a href="#home" class="top">
+    <img src="images/scroll-top-img.png" alt="">
+</a>
+
+
+
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script.js"></script>
+
+
+</body>
+</html>
