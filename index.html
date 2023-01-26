@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <!-- font awesome cdn link  -->
+    <!-- font awesome cdn link  --> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
 
     <style>
-         .portfolio ul {
+         .analyst ul {
          list-style-type: none;
          margin: 10px;
          width: 100%;
@@ -23,20 +23,51 @@
          position: sticky;
          top: 0;
          }
-         .portfolio li {
+         .analyst li {
          float: left;
          }
-         .portfolio li a {
+         .analyst li a {
          display: block;;
          color: white;
          /*text-align: center;*/
          padding: 15px 15px;
          text-decoration: none;
          }
-         .portfolio li a:hover:not(.active) {
+         .analyst li a:hover:not(.active) {
          background-color: #111;
          }
-         .portfolio .active {
+         .analyst .active {
+         /*background-color: #04AA6D;*/
+         background-color: #f9ca24;
+         color: #1a1a1a;
+         }
+          .scientist ul {
+         list-style-type: none;
+         margin: 10px;
+         width: 100%;
+         align-content: center;
+         padding:0px 30%;
+         overflow: hidden;
+         /*background-color: #333;*/
+         background-color: #1a1a1a;
+         position: -webkit-sticky; /* Safari */
+         position: sticky;
+         top: 0;
+         }
+         .scientist li {
+         float: left;
+         }
+         .scientist li a {
+         display: block;;
+         color: white;
+         /*text-align: center;*/
+         padding: 15px 15px;
+         text-decoration: none;
+         }
+         .scientist li a:hover:not(.active) {
+         background-color: #111;
+         }
+         .scientist .active {
          /*background-color: #04AA6D;*/
          background-color: #f9ca24;
          color: #1a1a1a;
@@ -56,8 +87,8 @@
     <nav class="navbar">
         <ul>
             <li><a href="#home">home</a></li>
-            <li><a href="#">data analyst</a></li>
-            <li><a href="#portfolio">data science</a></li>
+            <li><a href="#analyst">data analyst</a></li>
+            <li><a href="#scientist ">data science</a></li>
             <li><a href="#education">certification</a></li>
         </ul>
     </nav>
@@ -88,7 +119,7 @@
 <!-- home section ends -->
 
 <!-- data analyst section starts  -->
-<section class="portfolio" id="portfolio">
+<section class="analyst" id="analyst">
 <h1 class="heading"> my <span>portfolio</span> </h1>
 <div class="box-container">
     <div class="box">
@@ -125,8 +156,7 @@
         <a href="https://github.com/Akunnadove/Student-Performance-Analysis-in-Python">
         <img src="images/student.PNG" alt="">
         </a>
-    </div>
-    
+    </div> 
     <div class="box">
         <a href="https://github.com/Akunnadove/KDI-Analytics">
         <img src="images/KDI.PNG" alt="">
@@ -137,7 +167,7 @@
 <!-- data analyst section ends -->
 
 <!-- data_science section starts  -->
-<section class="data_science" id="data_science">
+<section class="scientist " id="scientist ">
 <h1 class="heading"> my data analyst <span>portfolio</span> </h1>
 <div class="box-container">
     <div class="box">
