@@ -328,33 +328,51 @@ header .navbar ul li a:hover{
   transform: scale(1.2);
 }
 
-.scientist .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
+.scientist .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
 }
 
-.scientist .box-container .box{
-    height: 20rem;
-    width:26rem;
-    border-radius: 1rem;
-    margin:2rem;
-    overflow: hidden;
-    cursor: pointer;
+.scientist .box-container .box {
+  height: 20rem;
+  width: 26rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
 }
 
-.scientist .box-container .box img{
-    height:100%;
-    width:100%;
-    object-fit: cover;
+.scientist .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.scientist .box-container .box:hover img{
-    transform: scale(1.2);
+.scientist .box-container .box .description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  opacity: 1; /* Hide the description by default */
+  transition: opacity 0.3s ease-in-out; /* Add a transition effect */
 }
 
+.scientist .box-container .box:hover .description {
+  opacity: 0; /* Show the description on hover */
+} 
+
+.scientist .box-container .box:hover img {
+  transform: scale(1.2);
+}
 
 .contact .row{
     display: flex;
