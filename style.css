@@ -282,31 +282,44 @@ header .navbar ul li a:hover{
     background:var(--yellow);
 }
 
-.analyst .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding:2rem 0;
+.analyst .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
 }
 
-.analyst .box-container .box{
-    height: 20rem;
-    width:26rem;
-    border-radius: 1rem;
-    margin:2rem;
-    overflow: hidden;
-    cursor: pointer;
+.analyst .box-container .box {
+  height: 20rem;
+  width: 26rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
 }
 
-.analyst .box-container .box img{
-    height:100%;
-    width:100%;
-    object-fit: cover;
+.analyst .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
-.analyst .box-container .box:hover img{
-    transform: scale(1.2);
+.analyst .box-container .box .description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.analyst .box-container .box:hover img {
+  transform: scale(1.2);
 }
 
 .scientist .box-container{
