@@ -115,6 +115,11 @@ header .user .post{
     color:#eee;
 }
 
+header .user .contact{
+    font-size: 1.5rem;
+    color:#eee;
+}
+
 header .navbar{
     width:100%;
 }
